@@ -50,3 +50,13 @@ C:\Users\kurtiss.bolam\source\repos\Bot Application1\Bot Application1\obj\Debug\
 C:\Users\kurtiss.bolam\source\repos\Bot Application1\Bot Application1\obj\Debug\Bot Application.dll
 C:\Users\kurtiss.bolam\source\repos\Bot Application1\Bot Application1\obj\Debug\Bot Application.pdb
 C:\Users\kurtiss.bolam\source\repos\Bot Application1\Bot Application1\obj\Debug\Bot Application1.csproj.ResolveComReference.cache
+C:\Users\kurtiss.bolam\source\repos\Bot Application1\Bot Application1\bin\DnsClient.dll
+C:\Users\kurtiss.bolam\source\repos\Bot Application1\Bot Application1\bin\MongoDB.Bson.dll
+C:\Users\kurtiss.bolam\source\repos\Bot Application1\Bot Application1\bin\MongoDB.Driver.Core.dll
+C:\Users\kurtiss.bolam\source\repos\Bot Application1\Bot Application1\bin\MongoDB.Driver.dll
+C:\Users\kurtiss.bolam\source\repos\Bot Application1\Bot Application1\bin\System.Buffers.dll
+C:\Users\kurtiss.bolam\source\repos\Bot Application1\Bot Application1\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\kurtiss.bolam\source\repos\Bot Application1\Bot Application1\bin\DnsClient.xml
+C:\Users\kurtiss.bolam\source\repos\Bot Application1\Bot Application1\bin\MongoDB.Bson.xml
+C:\Users\kurtiss.bolam\source\repos\Bot Application1\Bot Application1\bin\MongoDB.Driver.xml
+C:\Users\kurtiss.bolam\source\repos\Bot Application1\Bot Application1\bin\MongoDB.Driver.Core.xml

@@ -1,5 +1,4 @@
-﻿using System.Diagnostics;
-using System.Net;
+﻿using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
@@ -13,7 +12,6 @@ namespace Bot_Application1
     {
         public async Task<HttpResponseMessage> Post([FromBody]Activity activity)
         {
-            Debug.Print("Entered MessagesController.Post");
             if (activity.Type == ActivityTypes.Message)
             {
                 await Conversation.SendAsync(activity, () => new Dialogs.RootDialog());
@@ -23,13 +21,11 @@ namespace Bot_Application1
                 HandleSystemMessage(activity);
             }
             var response = Request.CreateResponse(HttpStatusCode.OK);
-            Debug.Print("Leaving MessagesController.Post");
             return response;
         }
 
         private Activity HandleSystemMessage(Activity message)
         {
-            Debug.Print("Entered MessagesController.HandleSystemMessage");
             if (message.Type == ActivityTypes.DeleteUserData)
             {
                 // Implement user deletion here
@@ -53,7 +49,6 @@ namespace Bot_Application1
             else if (message.Type == ActivityTypes.Ping)
             {
             }
-            Debug.Print("Leaving MessagesController.HandleSystemMessage");
             return null;
         }
     }
