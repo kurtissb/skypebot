@@ -9,6 +9,7 @@ using System.Configuration;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using System.Linq;
+using Bot_Application1.Services;
 
 namespace Bot_Application1.Dialogs
 {
@@ -35,6 +36,19 @@ namespace Bot_Application1.Dialogs
             var message = await result;
             await this.SendWelcomeMessageAsync(context);
             Debug.Print("Leaving RootDialog.MessageReceivedAsync");
+        }
+
+        private async Task GetWBSCode(IDialogContext context, IAwaitable<string>result)
+        {
+            var activity = await result;
+
+            var mongo = new MongoDbService();
+            var wbsResult = await mongo.getWbsCode(result.ToString());
+
+            var response = wbsResult != null ? String.Format("WBS code for {0} is: {1}", result.ToString(), wbsResult.code) : "No code was found. Please check the name provided";
+            await context.PostAsync(response);
+
+            context.Wait(MessageReceivedAsync);
         }
 
         private async Task SendWelcomeMessageAsync(IDialogContext context)
