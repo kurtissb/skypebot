@@ -14,8 +14,10 @@ namespace Bot_Application1.Models
         public string description { get; set; }
         [BsonElement("chargeable")]
         public bool chargeable { get; set; }
-        [BsonElement("addedDate")]
-        public DateTime addedDate { get; set; }
+        [BsonElement("startDate")]
+        public DateTime startDate { get; set; }
+        [BsonElement("endDate")]
+        public DateTime endDate { get; set; }
 
         public override string ToString()
         {
